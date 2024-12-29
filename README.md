@@ -1,5 +1,6 @@
 Cryptocurrency App
 A Jetpack Compose application that fetches and displays real-time cryptocurrency data from the CoinPaprika API. This app is built with MVVM architecture, utilizes Retrofit for API integration, and adheres to clean and maintainable coding practices.
+
 ![Bco](https://github.com/user-attachments/assets/648aae93-5d31-410f-8897-05cfd7314d40)
 
 
