@@ -42,3 +42,11 @@ Coroutine Support: Handles asynchronous API calls efficiently.
 
 Architecture
 MVVM (Model-View-ViewModel): Ensures separation of concerns, scalability, and adherence to clean architecture principles.
+
+Contributing
+
+Contributions are welcome! Please follow these steps:
+Fork the repository.
+Create a new branch for your feature or bug fix.
+Commit your changes with clear messages.
+Create a pull request.
