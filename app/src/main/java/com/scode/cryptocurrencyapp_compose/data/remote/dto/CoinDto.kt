@@ -1,6 +1,4 @@
 package com.scode.cryptocurrencyapp_compose.data.remote.dto
-
-
 import com.google.gson.annotations.SerializedName
 import com.scode.cryptocurrencyapp_compose.domain.model.Coin
 
