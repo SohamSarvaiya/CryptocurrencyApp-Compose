@@ -22,11 +22,14 @@ fun TeamListItem(
         modifier = modifier,
         verticalArrangement = Arrangement.Center
     ) {
+
         Text(
             text = teamMember.name,
             style = MaterialTheme.typography.titleMedium
         )
+
         Spacer(modifier = Modifier.height(4.dp))
+
         Text(
             text = teamMember.position,
             style = MaterialTheme.typography.labelMedium,

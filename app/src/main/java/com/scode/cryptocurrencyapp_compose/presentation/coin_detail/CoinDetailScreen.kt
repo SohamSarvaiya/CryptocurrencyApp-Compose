@@ -51,17 +51,22 @@ fun CoinDetailScreen(
                                 .weight(2f)
                         )
                     }
+
                     Spacer(modifier = Modifier.height(15.dp))
+
                     Text(
                         text = coin.description,
                         style = MaterialTheme.typography.titleSmall
                     )
+
                     Spacer(modifier = Modifier.height(15.dp))
+
                     Text(
                         text = "Tags",
                         style = MaterialTheme.typography.titleLarge
                     )
                     Spacer(modifier = Modifier.height(15.dp))
+
                     FlowRow(
                         mainAxisSpacing = 10.dp,
                         crossAxisSpacing = 10.dp,
@@ -71,12 +76,16 @@ fun CoinDetailScreen(
                             CoinTag(tag = tag)
                         }
                     }
+
                     Spacer(modifier = Modifier.height(15.dp))
+
                     Text(
                         text = "Team members",
                         style = MaterialTheme.typography.titleLarge
                     )
+
                     Spacer(modifier = Modifier.height(15.dp))
+
                 }
                 items(coin.team) { teamMember ->
                     TeamListItem(
@@ -89,6 +98,7 @@ fun CoinDetailScreen(
                 }
             }
         }
+
         if(state.error.isNotBlank()) {
             Text(
                 text = state.error,
@@ -100,6 +110,7 @@ fun CoinDetailScreen(
                     .align(Alignment.Center)
             )
         }
+
         if(state.isLoading) {
             CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
         }

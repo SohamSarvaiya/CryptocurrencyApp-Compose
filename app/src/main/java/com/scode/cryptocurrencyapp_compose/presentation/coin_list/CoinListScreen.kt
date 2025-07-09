@@ -36,6 +36,7 @@ fun CoinListScreen(
                 )
             }
         }
+
         if(state.error.isNotBlank()) {
             Text(
                 text = state.error,

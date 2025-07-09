@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 fun CoinTag(
     tag: String
 ) {
+
     Box(
         modifier = Modifier
             .border(
@@ -25,6 +26,7 @@ fun CoinTag(
             )
             .padding(10.dp)
     ) {
+
         Text(
             text = tag,
             color = Color.Cyan ,

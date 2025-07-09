@@ -31,14 +31,17 @@ class CoinDetailViewModel @Inject constructor(
     private fun getCoin(coinId: String) {
         getCoinUseCase(coinId).onEach { result ->
             when (result) {
+
                 is Resource.Success -> {
                     _state.value = CoinDetailState(coin = result.data)
                 }
+
                 is Resource.Error -> {
                     _state.value = CoinDetailState(
                         error = result.message ?: "An unexpected error occured"
                     )
                 }
+
                 is Resource.Loading -> {
                     _state.value = CoinDetailState(isLoading = true)
                 }
